@@ -1,7 +1,7 @@
 import h5py
 
 
-file = '/Users/utx/Desktop/code/video_learning_samples/add_remove_lid/0.hdf5'
+file = '/Users/utx/Desktop/code/egodexrobotics/video_learning_samples/add_remove_lid/0.hdf5'
 def print_structure(name, obj):
     # This function checks if an item is a Group (folder) or Dataset (file)
     if isinstance(obj, h5py.Group):

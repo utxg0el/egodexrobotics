@@ -62,7 +62,7 @@ def main():
                     # We store the polygon points and the bounding box
                     object_memory[cls_id] = {
                         'mask': np.int32([mask]),
-                        'box': map(int, box.xyxy[0]),
+                        'box': list(map(int, box.xyxy[0])),
                         'label': results[0].names[cls_id],
                         'lost_frames': 0
                     }
