@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the file
-filename = '/Users/utx/Desktop/code/video_learning_samples/add_remove_lid/0.hdf5'
+filename = '/Users/utx/Desktop/code/egodexrobotics/video_learning_samples/add_remove_lid/0.hdf5'
 
 
 with h5py.File(filename, 'r') as f:

@@ -3,9 +3,9 @@ import numpy as np
 import cv2
 
 # --- CONFIGURATION ---
-H5_FILE = '/Users/utx/Desktop/code/video_learning_samples/add_remove_lid/0.hdf5'
+H5_FILE = '/Users/utx/Desktop/code/egodexrobotics/video_learning_samples/open_close/1.hdf5'
 
-VIDEO_FILE = '/Users/utx/Desktop/code/video_learning_samples/add_remove_lid/0.mp4'
+VIDEO_FILE = '/Users/utx/Desktop/code/egodexrobotics/video_learning_samples/open_close/1.mp4'
 OUTPUT_FILE = 'output_overlay.mp4'
 
 # Define the bone connections (Parent -> Child)
