@@ -2,6 +2,13 @@ import cv2
 import numpy as np
 import os
 
+"""
+3D Point Cloud Reconstruction Module.
+
+This script manually back-projects a single RGB-D frame into 3D space using a pinhole camera model.
+It generates a .ply file that can be visualized in MeshLab or Open3D.
+"""
+
 # === SETTINGS ===
 BASE_DIR = "../"
 VIDEO_SOURCE = os.path.join(BASE_DIR, "video_learning_samples/add_remove_lid/0.mp4")
@@ -11,6 +18,10 @@ FRAME_IDX = 45
 FX, FY = 1000.0, 1000.0 # Focal lengths
 
 def process_frame():
+    """
+    Reads RGB and Depth frames, computes 3D coordinates, and saves a .ply point cloud.
+    Also generates an artifact visualization for debugging flying pixels.
+    """
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     print(f"🚀 Starting Manual 3D Extraction...")
 

@@ -4,6 +4,13 @@ import torch
 from transformers import pipeline
 from PIL import Image
 
+"""
+Monocular Depth Estimation Module using 'Depth Anything'.
+
+This script processes a video file to generate a side-by-side visualization of the original RGB
+frame and its corresponding estimated depth map.
+"""
+
 # --- CONFIGURATION ---
 # Use the video you already have
 VIDEO_PATH = '/Users/utx/Desktop/code/egodexrobotics/video_learning_samples/add_remove_lid/0.mp4'
@@ -11,6 +18,10 @@ OUTPUT_PATH = '/Users/utx/Desktop/code/egodexrobotics/outputs/output_depth_vis.m
 
 
 def main():
+    """
+    Main function to run the depth estimation pipeline on a video file.
+    Loads the model, processes frames, and saves the output video.
+    """
     print("⏳ Loading Depth Model... (This might take a minute the first time)")
     
     # Check for Mac GPU (MPS) or fallback to CPU

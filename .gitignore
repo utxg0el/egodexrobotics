@@ -1,1 +1,33 @@
-scripts/sam_vit_h_4b8939.pth
+# System files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and Outputs
+outputs/
+video_learning_samples/
+*.h5
+*.hdf5
+*.mp4
+*.avi
+*.mov
+*.ply
+
+# Models
+*.pt
+*.pth
+*.onnx
+
+# Environment
+.env
+venv/
+env/

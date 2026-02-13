@@ -3,6 +3,14 @@ import numpy as np
 import cv2
 from ultralytics import YOLO
 
+"""
+Object Tracking and Memory Module.
+
+This script implements object tracking using YOLOv8 and ByteTrack, with a custom 'Memory' system
+to persist object locations even when they are temporarily occluded. It also visualizes
+safety bubbles around the robot's wrists.
+"""
+
 # --- CONFIGURATION ---
 H5_FILE = '/Users/utx/Desktop/code/egodexrobotics/video_learning_samples/add_remove_lid/0.hdf5'
 VIDEO_FILE = '/Users/utx/Desktop/code/egodexrobotics/video_learning_samples/add_remove_lid/0.mp4'
@@ -24,6 +32,9 @@ def project_wrist(f, frame_idx, K, cam_pose, side='right'):
         return None
 
 def main():
+    """
+    Main function to run object tracking on a video and HDF5 data file.
+    """
     print("⏳ Loading YOLOv8-Seg with ByteTrack...")
     model = YOLO('yolov8m-seg.pt') 
 
