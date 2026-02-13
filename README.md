@@ -5,8 +5,8 @@
 This repository contains tools and scripts to analyze the **Apple EgoDex dataset**. It provides pipelines for:
 - **Monocular Depth Estimation** (using Depth Anything)
 - **3D Point Cloud Reconstruction** (from single-view RGB-D)
-- **Object Tracking with Memory** (YOLOv8 + ByteTrack + Ghost Memory)
-- **Hand-Object Interaction Safety Bubbles**
+- **Object Tracking with Memory** (Hamer + Foundation Pose)
+- **Segmentation** (SAM 2)
 
 ## 📂 Dataset
 The code is designed to work with the **Apple EgoDex dataset**. 
